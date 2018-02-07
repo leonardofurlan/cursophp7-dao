@@ -39,12 +39,17 @@ echo json_encode($usuarios);*/
 
 // echo $aluno;
 
+
+//Fazendo update
+// $usuario = new Usuario();
+// $usuario->loadById(7);
+// $usuario->update("professor","0934420");
+// echo $usuario;
+
+//Fazendo exclusão
 $usuario = new Usuario();
-
-$usuario->loadById(7);
-
-$usuario->update("professor","0934420");
-
+$usuario->loadById(8);
+$usuario->delete();
 echo $usuario;
 
  ?>
